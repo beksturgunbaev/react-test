@@ -1,10 +1,8 @@
 .header {
     min-height: 70px;
     display: flex;
-    position: relative;
-    z-index: 1;
     align-items: center;
-    .header-container {
+    .container {
         max-width: 1260px;
         width: 100%;
         margin: 0 auto;
@@ -14,6 +12,8 @@
         a {
             color: #444;
             text-decoration: none;
+            font-size: 18px;
+            font-weight: 400;
         }
         ul {
             display: flex;
@@ -26,6 +26,9 @@
         }
         .logo {
             font-weight: bold;
+            color: #444;
+            text-decoration: none;
+            font-size: 21px;
         }
     }
 }

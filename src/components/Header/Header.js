@@ -13,7 +13,7 @@ export const Header = () => {
         <>
             <Router>
                 <header className="header">
-                    <div className="header-container">
+                    <div className="container">
                         <div>
                             < Logo />
                         </div>

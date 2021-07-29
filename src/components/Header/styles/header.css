@@ -3,14 +3,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
-  z-index: 1;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.header .header-container {
+.header .container {
   max-width: 1260px;
   width: 100%;
   margin: 0 auto;
@@ -25,12 +23,14 @@
           align-items: center;
 }
 
-.header .header-container a {
+.header .container a {
   color: #444;
   text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
 }
 
-.header .header-container ul {
+.header .container ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,12 +42,15 @@
           align-items: center;
 }
 
-.header .header-container ul li {
+.header .container ul li {
   list-style: none;
   margin-left: 30px;
 }
 
-.header .header-container .logo {
+.header .container .logo {
   font-weight: bold;
+  color: #444;
+  text-decoration: none;
+  font-size: 21px;
 }
 /*# sourceMappingURL=header.css.map */

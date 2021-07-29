@@ -1,1 +1,26 @@
-/* No CSS *//*# sourceMappingURL=home.css.map */
+.main_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: 140px;
+}
+
+.main_content h1 {
+  font-size: 64px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.main_content p {
+  font-size: 20px;
+  padding: 4px 0;
+  font-weight: 400;
+}
+/*# sourceMappingURL=home.css.map */
