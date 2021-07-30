@@ -7,6 +7,7 @@ import Products from '../Produts/Products';
 import Contacts from '../Contacts/Contacts';
 import Home from '../Home/Home';
 import { Logo } from './Logo';
+import { Icons } from './Icons';
 
 export const Header = () => {
     return (
@@ -23,6 +24,7 @@ export const Header = () => {
                             < Menu menu='Products' link='/products' />
                             < Menu menu='Contacts' link='/contacts' />
                         </ul>
+                        < Icons />
                     </div>
                 </header>
                 <Switch>

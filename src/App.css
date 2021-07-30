@@ -10,7 +10,7 @@
   max-width: 1260px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 24px;
 }
 .section {
   width: 100%;
@@ -20,4 +20,9 @@
 }
 .main_section {
   height: 100vh;
+  background: #e2e1e1;
+}
+img {
+  max-width: 100%;
+  height: auto;
 }
