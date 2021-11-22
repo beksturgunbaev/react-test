@@ -2,6 +2,9 @@
     min-height: 70px;
     display: flex;
     align-items: center;
+    position: sticky;
+    top: 0;
+    background: #fff;
     .container {
         max-width: 1260px;
         width: 100%;
@@ -9,6 +12,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
         a {
             color: #444;
             text-decoration: none;
@@ -30,10 +34,12 @@
                 margin-left: 20px;
                 cursor: pointer;
                 span {
+                    font-family: sans-serif;
                     position: absolute;
                     top: -12px;
                     right: -18px;
-                    border-radius: 50%;
+                    border-radius: 9px;
+                    padding: 0 7px;
                     min-width: 20px;
                     min-height: 20px;
                     display: flex;
@@ -50,6 +56,40 @@
             color: #444;
             text-decoration: none;
             font-size: 21px;
+        }
+        .user-icon {
+            margin-left: 50px !important;
+            img {
+                width: 21px;
+            }
+        }
+        .search-div {
+            position: absolute;
+            top: 40px;
+            right: 24px;
+            box-shadow: 0 3px 10px #b4b2b2;
+            padding: 10px;
+            background: #fff;
+            transition: .4s;
+            transform: translate(0, 14px);
+            opacity: 0;
+            visibility: hidden;
+            &.active {
+                transform: translate(0, 0);
+                opacity: 1;
+                visibility: visible;
+            }
+            form {
+                input {
+                    border: none;
+                    border-bottom: 1px solid #444;
+                    padding: 4px;
+                    background: transparent;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
         }
     }
 }

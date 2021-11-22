@@ -1,10 +1,12 @@
+import React from 'react';
 import './styles/header.css'
+import userIcon from '../../Assets/img/user.png'
 
-export const Icons = () => {
+const Icons = () => {
     return (
         <>
             <ul className="icons">
-                <li>
+                <li className="search-icon">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width={24}
@@ -37,7 +39,6 @@ export const Icons = () => {
                             strokeLinejoin="round"
                         />
                     </svg>
-                    <span>0</span>
                 </li>
                 <li>
                     <svg
@@ -59,9 +60,16 @@ export const Icons = () => {
                             strokeLinejoin="round"
                         />
                     </svg>
-                    <span>12</span>
+                    <span>0</span>
+                </li>
+                <li className="user-icon">
+                    <a href="#">
+                        <img src={ userIcon } alt="User icon" />
+                    </a>
                 </li>
             </ul>
         </>
     );
 }
+
+export default Icons;

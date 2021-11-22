@@ -19,10 +19,28 @@
   font-size: 70px;
 }
 .main_section {
-  height: 100vh;
+  min-height: 680px;
   background: #e2e1e1;
 }
 img {
   max-width: 100%;
   height: auto;
+}
+ul, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+::-webkit-scrollbar {
+  width: .6em;
+}
+::-webkit-scrollbar-thumb {
+  background: #bdb9b9;
+  border-radius: 12px;
+  margin: 0 2px;
+}​
+::-webkit-scrollbar-button {
+  background: #e2e1e1;
+}
+::-webkit-scrollbar-track-piece {
+  background: #fff;
+  padding: 0 2px;
 }

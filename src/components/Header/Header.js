@@ -3,11 +3,12 @@ import { Menu } from './Menu'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import About from '../About/About';
-import Products from '../Produts/Products';
+import Products from '../Products/Products';
 import Contacts from '../Contacts/Contacts';
 import Home from '../Home/Home';
 import { Logo } from './Logo';
-import { Icons } from './Icons';
+import Icons from './Icons';
+import { Search } from './search';
 
 export const Header = () => {
     return (
@@ -25,6 +26,7 @@ export const Header = () => {
                             < Menu menu='Contacts' link='/contacts' />
                         </ul>
                         < Icons />
+                        <Search  />
                     </div>
                 </header>
                 <Switch>

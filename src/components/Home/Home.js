@@ -2,12 +2,13 @@ import React from 'react'
 import './styles/home.css'
 import watch from '../../Assets/img/1.png'
 import { Button } from './Button'
+import HomeProducts from './HomeProducts'
 
 const Home = () => {
     return (
         <>
-            <div className="container">
-                <section className='section'>
+            <section className="main_section">
+                <div className="container">
                     <div className="main_content">
                         <div className="content_left">
                             <h1>Lorem ipsum <br/>dolor sit amet</h1>
@@ -22,8 +23,9 @@ const Home = () => {
                             </article>
                         </div>
                     </div>
-                </section>
-            </div>
+                </div>
+            </section>
+            < HomeProducts />
         </>
     )
 }
