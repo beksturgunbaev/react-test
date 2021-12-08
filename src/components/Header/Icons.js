@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react'
 import './styles/header.css'
 import userIcon from '../../Assets/img/user.png'
+import Modal from '../Modal/Modal';
 
 const Icons = () => {
+    const [modalActive, setModalActive] = useState(false);
     return (
         <>
+            <Modal active={modalActive} setActive={setModalActive} />
             <ul className="icons">
-                <li className="search-icon">
+                <li className="search-icon" onClick={()=>{setModalActive(true)}}>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width={24}

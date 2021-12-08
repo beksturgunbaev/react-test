@@ -8,7 +8,6 @@ import Contacts from '../Contacts/Contacts';
 import Home from '../Home/Home';
 import { Logo } from './Logo';
 import Icons from './Icons';
-import { Search } from './search';
 
 export const Header = () => {
     return (
@@ -26,7 +25,6 @@ export const Header = () => {
                             < Menu menu='Contacts' link='/contacts' />
                         </ul>
                         < Icons />
-                        <Search  />
                     </div>
                 </header>
                 <Switch>

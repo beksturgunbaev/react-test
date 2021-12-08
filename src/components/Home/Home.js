@@ -1,4 +1,3 @@
-import React from 'react'
 import './styles/home.css'
 import watch from '../../Assets/img/1.png'
 import { Button } from './Button'
